@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Senobi-Gothic-Medium';
+  src: url('Senobi-Gothic-Medium.ttf');
+}
+body {
+  background: #ddd;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px 5px;
+}
+.input-area {
+  margin-bottom: 20px;
+}
+#price, #num, #unit {
+  display: block;
+  width: 95%;
+  height: 40px;
+  margin-bottom: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+}
+#btn {
+  width: 95%;
+  height: 40px;
+  margin-bottom: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  background: #3897fd;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+#btn:hover {
+  opacity: .8;
+}
+#btn.disabled {
+  background: #aaa;
+  color: #444;
+}
+
+.result-area {
+  width: 95%;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #f8f8f8;
+  border-radius: 5px;
+  position: relative;
+}
+#result {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#reset {
+  margin-top: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Senobi-Gothic-Medium';
+  color: #3897fd;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+.hidden {
+  display: none;
+}

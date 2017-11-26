@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue"></script>
+  <title>ワッタロ | 割り勘計算アプリ</title>
+</head>
+<body>
+
+  <div class="container">
+    <div id="wattaro">
+      <div class="input-area">
+        <input type="text" id="price" placeholder="金額" maxlength=6 v-model="price" @keyup="checkInput">
+        <input type="text" id="num" placeholder="人数" maxlength=3 v-model="num" @keyup="checkInput">
+        <select id="unit" v-model="unit">
+          <option value="10">10円単位</option>
+          <option value="100">100円単位</option>
+          <option value="1000">1,000円単位</option>
+        </select>
+        <div id="btn" :class="{ disabled: disabled }" @click="calc">計算</div>
+      </div>
+      <div class="result-area">
+        <ul id="result">
+          <li v-for="result in results">{{ result.text }}</li>
+        </ul>
+        <div id="reset" :class="{ hidden: hide_reset }" @click="reset">リセット</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="vue.js"></script>
+</body>
+</html>
