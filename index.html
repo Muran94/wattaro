@@ -13,8 +13,8 @@
   <div class="container">
     <div id="wattaro">
       <div class="input-area">
-        <input type="text" id="price" placeholder="金額" maxlength=6 v-model="price" @keyup="checkInput">
-        <input type="text" id="num" placeholder="人数" maxlength=3 v-model="num" @keyup="checkInput">
+        <input type="tel" id="price" placeholder="金額" maxlength=6 v-model="price" @keyup="checkInput">
+        <input type="tel" id="num" placeholder="人数" maxlength=3 v-model="num" @keyup="checkInput">
         <select id="unit" v-model="unit">
           <option value="10">10円単位</option>
           <option value="100">100円単位</option>
